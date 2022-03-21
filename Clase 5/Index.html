@@ -11,11 +11,32 @@
             Informaci&oacute;n Personal
         </label>
         <form>
-            <label>Nombre *</label>
             <br>
+            <label>Nombre *</label>        
             <input type="Texto" name="nombre">
             <label>Apellido *</label>
             <input type="Texto" name="apellido" placeholder="Avicolli">
+            <br>
+            <label>Direcci&oacute;n de email</label>
+            <input type="Texto" name="email" placeholder="mail@mail.com">
+            <br>
+            <label>Numero de Documento</label>
+            <input type="Texto" name="numero" placeholder="xxxxxxx">
+            <br>
+
+            <!--solo numeros-->
+            <label>Edad</label>
+            <input type="number" min="0" max="999">
+            <br>
+            <label>Tiene Hijos</label>
+            <input type="checkbox" name="Tiene Hijos" value="SI">
+            <br>
+            <label>Casado</label>
+            <input type="radio" name="Casado" value="SI">
+            <input type="radio" name="Casado" value="NO">
+
+            <br>
+            <input type="submit" value="Enviar">
         </form>
         
                     

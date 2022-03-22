@@ -7,9 +7,9 @@
 <body>
     <h1>Crear Cuenta</h1>
     <fieldset>
-        <label>
+        <legend>
             Informaci&oacute;n Personal
-        </label>
+        </legend>
         <form>
             <br>
             <label>Nombre *</label>        
@@ -28,18 +28,66 @@
             <label>Edad</label>
             <input type="number" min="0" max="999">
             <br>
-            <label>Tiene Hijos</label>
-            <input type="checkbox" name="Tiene Hijos" value="SI">
+            <label>Adheririse al boton de novedades</label>
+            <input type="checkbox" name="adh" value="SI">
             <br>
             <label>Casado</label>
+            <span>SI</span>
             <input type="radio" name="Casado" value="SI">
+            <span> NO</span>
             <input type="radio" name="Casado" value="NO">
+            <br>
+
+            <label>Cantidad</label>
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+
+
+            </select>
 
             <br>
             <input type="submit" value="Enviar">
-        </form>
-        
+        </form>     
                     
+    </fieldset>
+    <fieldset>
+        <legend>Form con Tabla</legend>
+        <form action="">
+            <table>
+            <tr>
+                <td>
+                    <label>Nombre *</label><br>
+                    <input type="text" name="Nombre">
+                </td>
+                <td>
+                    <label>Apellido *</label><br>
+                    <input type="Texto" name="apellido" placeholder="Avicolli">
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <label> Direccion de Mail *</label><br>
+                <input type="Texto" name="email" placeholder="mail@mail.com">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Numero de Documento</label> <br>
+            <input type="number" name="dni" min="0" max="99999999">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Guardar">
+                </td>
+            </tr>
+            </table>
+         </form>
+
+
     </fieldset>
 
 </body>
